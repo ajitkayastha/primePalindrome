@@ -1,4 +1,4 @@
-var longestPalindrome = function (string) {
+function solution(s) {
 
     var length = string.length;
     var result = "";
@@ -41,5 +41,5 @@ var longestPalindrome = function (string) {
 };
 
 console.log(
-    longestPalindrome("mom")
+    solution("mom")
 );

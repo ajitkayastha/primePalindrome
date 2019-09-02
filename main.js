@@ -1,16 +1,16 @@
 function solution(s) {
 
-    var length = string.length;
+    var length = s.length;
     var result = "";
 
     var centeredPalindrome = function (left, right) {
-        while (left >= 0 && right < length && string[left] === string[right]) {
+        while (left >= 0 && right < length && s[left] === s[right]) {
             //expand in each direction.
             left--;
             right++;
         }
 
-        return string.slice(left + 1, right);
+        return s.slice(left + 1, right);
     };
 
     for (var i = 0; i < length - 1; i++) {
